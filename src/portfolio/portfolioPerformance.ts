@@ -12,12 +12,15 @@ export interface PortfolioResult {
 
 /**
  **
- * Calculates the portfolio performance based on the initial and current values
- * Used switch(true) instead of if/else for conditional logic
- * @param initialInvestment - The starting investment amount
- * @param currentValue - The current value of the portfolio
- * @returns PortfolioResult object with performance details
+ * /**
+ * Calculates how a portfolio has performed based on its initial and current values.
+ * Uses a switch(true) statement to handle the different performance conditions.
+ *
+ * @param initialInvestment - The original amount invested
+ * @param currentValue - The portfolio’s current total value
+ * @returns A PortfolioResult object containing profit/loss, percentage change, and summary
  */
+ 
 
 export const calculatePortfolioPerformance = (
     initialInvestment: number,
