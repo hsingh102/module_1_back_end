@@ -1,15 +1,13 @@
+// Import the Express app instance that we created in app.ts
 import app from "./app";
 
-// import server type definition
-import { Server } from "http";
+// Define the port number where the server will listen for requests
+const PORT = 3000;
 
-// initialize port as either string read from .env, or 3000 by default
-const PORT: string | 3000 = process.env.PORT || 3000;
+// Start the server and make it listen on the defined port
+// The callback function runs once the server is successfully up and running
+app.listen(PORT, () => {
 
-// initialize server for the application to listen for requests on the specified port
-const server: Server = app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-// export server for testing
-export default server;
