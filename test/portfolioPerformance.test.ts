@@ -17,7 +17,7 @@ describe('assetAllocationPercentage', () => {
   it('should calculate allocation percentages correctly for uneven distribution', () => {
     // Arrange: Create a portfolio where one asset is larger than the other
     const assets: Asset[] = [
-      { name: 'Stocks', value: 7000 },
+      { name: 'Stocks', value: 8000 },
       { name: 'Bonds', value: 3000 },
     ];
     // Act: Call the function to calculate asset allocation percentages
